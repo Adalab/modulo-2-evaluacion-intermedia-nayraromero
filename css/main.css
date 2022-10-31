@@ -1,0 +1,18 @@
+.button{
+    background-color: #ab2a3e;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+}
+.div{
+    background-color: #ab2a3e;
+    opacity: 0.5;
+    width: max-content;
+}
+.battle{
+    padding: 7px 40px 7px 40px;
+    color: white;
+    font-weight: bold;
+}
