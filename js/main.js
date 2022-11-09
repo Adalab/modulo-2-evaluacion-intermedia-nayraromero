@@ -1,12 +1,9 @@
 'use strict';
 
-//VARIABLES
-
 const select = document.querySelector('.js-select');
 const button = document.querySelector('.js-button');
 const result = document.querySelector('.js-text');
 
-//FUNCIONES
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
@@ -51,7 +48,7 @@ function compareRaces(userRace, computerRace) {
     result.innerHTML = 'Empate.';
   }
 }
-//FUNCION MANEJADORA
+
 function handleclick(event) {
   event.preventDefault();
   const userRace = getUserRace();
@@ -59,5 +56,4 @@ function handleclick(event) {
   compareRaces(userRace, computerRace);
 }
 
-//EVENTOS
 button.addEventListener('click', handleclick);
