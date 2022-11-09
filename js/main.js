@@ -16,7 +16,7 @@ function getRandomNumber(max) {
 
 function compareBattle() {
   const selectValue = parseInt(select.value);
-  const randomNumber = getRandomNumber();
+  const randomNumber = getRandomNumber(5);
   console.log(selectValue, randomNumber);
   if (randomNumber > selectValue) {
     battle.innerHTML = 'Ha ganado el Ejército del Mal! Vuelve a Intentarlo';
