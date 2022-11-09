@@ -1,3 +1,7 @@
+'use strict';
+
+//VARIABLES
+
 const select = document.querySelector('.js-select');
 const button = document.querySelector('.js-button');
 const battle = document.querySelector('.js-text');
@@ -5,8 +9,9 @@ const section = document.querySelector('.js-section');
 const userPoints = document.querySelector('.js-user');
 const computerPoints = document.querySelector('.js-computer');
 
+//FUNCIONES
 function getRandomNumber(max) {
-  return Math.ceil(Math.random() * 5);
+  return Math.ceil(Math.random() * max);
 }
 
 function compareBattle() {
@@ -34,9 +39,11 @@ function compareBattle() {
 function showPoints() {
   section.classList.remove('hidden');
 }
-
-button.addEventListener('click', (event) => {
+function handleclick(event) {
   event.preventDefault();
   compareBattle();
   showPoints();
-});
+}
+
+//EVENTOS
+button.addEventListener('click', handleclick);
