@@ -14,6 +14,10 @@ function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
+function getUserRace() {
+  return parseInt(select.value);
+}
+
 function getComputerRace() {
   const randomNumber = getRandomNumber(5);
   console.log('random number es ' + randomNumber);
